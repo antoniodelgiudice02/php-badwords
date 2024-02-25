@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="d-flex flex-column justify-content-center align-items-center vh-100">
 
         <form action="./index.php" method="GET" class="d-flex flex-column justify-content-start">
             <label for="text">Scrivi una frase</label>
@@ -16,6 +16,14 @@
             <div>
                 
                 <input type="text" name="text" id="text">
+    
+            </div>
+
+            <label for="censured">Parola da censurare</label>
+
+            <div>
+                
+                <input type="text" name="censured" id="censured">
                 <button>invia</button>
     
             </div>

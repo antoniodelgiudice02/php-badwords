@@ -2,7 +2,14 @@
 
 $text = $_GET['text'];
 
-$text_length = strlen($text)
+$censured = $_GET['censured'];
+
+$text_length = strlen($text);
+
+$text_censured = str_replace($censured, '***', $text);
+
+$text_censured_length = strlen($text_censured);
+
 
 
 ?>
@@ -26,6 +33,18 @@ $text_length = strlen($text)
     <div>
 
         <span>lunghezza: <?= $text_length ?></span>
+
+    </div>
+
+    <div>
+
+        <span>testo censurato: <?= $text_censured ?></span>
+
+    </div>
+
+    <div>
+
+        <span>lunghezza testo censurato: <?= $text_censured_length ?></span>
 
     </div>
 
